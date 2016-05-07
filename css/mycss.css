@@ -1,8 +1,16 @@
-.custom-carousel {
-    /*width: 600px;
-    height: 400px;*/
-}
-
 footer {
     background: #2c3e50;
+}
+
+.carousel-inner {
+  width:100%;
+  height: 400px !important;
+}
+
+.carousel-inner img {
+    margin: 0 auto;
+}
+
+#main-thumbnails {
+    padding-top: 50px;
 }
