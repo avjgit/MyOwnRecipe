@@ -45,9 +45,11 @@
         <script src="js/freelancer.js"></script>
 
         <script src="js/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.js"></script>
         <script src="js/app.js"></script>
         <script src="js/recipeFooter.js"></script>
         <script src="js/contentController.js"></script>
+        <script src="js/release.js"></script>
         
     </head>
     <body>
@@ -125,7 +127,7 @@
                     </div>
                     <div class="thumbnail text-center col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-2">
                         <div class="caption">
-                            <h3>Search recipes</h3>
+                            <h3>{{searchRecipesVariable}}</h3>
                             <p>
                                 <a href="#" class="btn btn-primary" role="button">Search</a>
                             </p>
@@ -136,7 +138,10 @@
             
         </section>
         
-        <recipe-footer></recipe-footer>
+        <div ui-view></div>
+
+
+        <!--<recipe-footer></recipe-footer>-->
         
     </body>
 </html
